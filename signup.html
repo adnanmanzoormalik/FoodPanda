@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Additional custom styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            display: flex;
+            align-items: center;
+            height: 150px;
+        }
+
+        #logo {
+            width: 90px;
+            height: 90px;
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+
+        #h1 {
+            font-size: 3.5rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 10px 8px 10px rgba(241, 67, 4, 10); 
+
+        }
+
+
+        .container {
+            background-color: #eebb6f;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 400px; /* Limit container width */
+            margin: auto; /* Center container horizontally */
+        }
+
+        .container h2 {
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-group label {
+            color: white;
+        }
+
+        .btn-primary {
+            background-color: #f57c00;
+            border-color: #f57c00;
+        }
+
+        .btn-primary:hover {
+            background-color: #e65100;
+            border-color: #e65100;
+        }
+
+        .btn-login {
+            background-color: #ffc107;
+            border-color: #ffc107;
+            margin-top: 10px;
+        }
+
+        .btn-login:hover {
+            background-color: #ff9800;
+            border-color: #ff9800;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="logo.jpg" alt="Logo">
+        <h1 id="h1">Food Panda</h1>
+    </header>
+    <br>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" class="form-control" id="confirmPassword" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+        </form><br>
+        <p>
+            Already have an account?
+        </p>
+        <button class="btn btn-login btn-block" onclick="location.href='login.html'">Login</button>
+    </div>
+    <br><br><br><br>
+    <footer>
+        By continuing on this website you are agreeing to our terms and conditions
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // JavaScript code to handle form submission
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            // Retrieve username and password from form inputs
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+            // Validate username and password (you can add your own validation logic here)
+            if (password !== confirmPassword) {
+                // If passwords don't match, display error message
+                alert('Passwords do not match. Please try again.');
+            } else {
+                // If valid, perform signup logic (you can customize this part)
+                alert('Sign up successful. Redirecting to login page.');
+                window.location.href = 'login.html';
+            }
+        });
+    </script>
+</body>
+
+</html>

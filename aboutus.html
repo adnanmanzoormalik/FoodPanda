@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Food Panda</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            display: flex;
+            align-items: center;
+        }
+
+        #logo {
+            width: 90px;
+            height: 90px;
+            margin-right: 30px;
+            margin-left: 30px;        }
+
+        #h1 {
+            font-size: 3.5rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 10px 8px 10px rgba(241, 67, 4, 10); 
+        }
+
+        nav {
+            background-color: #e39312;
+            padding: 0.7rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 1rem;
+            font-size: 17px;
+            border-radius: 10px;
+        }
+
+        nav a:hover {
+            background-color: #6f3f05;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .about-box {
+            margin: 30px 0;
+            margin-left: 50px;
+            margin-right: 50px;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid #e39312;
+            border-radius: 5px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .gallery img {
+            width: calc(25% - 20px);
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        .social-media-box {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .social-media-box img {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #e39312;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="logo.jpg" alt="Logo">
+        <h1 id="h1">Food Panda</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>|
+        <a href="restaurants.html">Restaurants</a>|
+        <a href="customercare.html">Customer Care</a>|
+        <a href="feedback.html">Feedback</a>|
+        <a href="aboutus.html">About Us</a>
+    </nav>
+
+    <main>
+        <h2 style="font-size:xx-large;">About Us</h2>
+
+        <div class="about-box">
+            <h3>Our Story</h3>
+            <p>Welcome to Food Panda, your go-to place for delicious food delivered right to your doorstep. Our journey began with a simple idea: to create a culinary experience that goes beyond just meals. It's about crafting moments, fostering connections, and delivering joy through every bite.</p>
+            <p>Driven by our passion for exceptional taste and quality, we source the finest ingredients and collaborate with skilled chefs to bring you a diverse menu that caters to your cravings. Each dish tells a story of flavors, cultures, and the dedication we put into every aspect of your dining experience.</p>
+            <p>At Food Panda, we believe that good food is more than sustenance; it's an expression of care and a celebration of life. Join us in this gastronomic adventure, where we strive to turn every meal into a memorable occasion. Thank you for making us a part of your culinary journey!</p>
+        </div>
+
+        <div class="about-box">
+            <h3>Image Gallery</h3>
+            <div class="gallery">
+                <img src="about1.jpg" alt="Gallery Image 1">
+                <img src="about2.jpg" alt="Gallery Image 2">
+                <img src="about3.jpg" alt="Gallery Image 3">
+                <img src="about4.jpg" alt="Gallery Image 4">
+                <img src="about5.jpg" alt="Gallery Image 5">
+                <img src="about6.jpg" alt="Gallery Image 6">
+                <img src="foodimagehome1.jpg" alt="Gallery Image 7">
+                <img src="foodimagehome4.jpg" alt="Gallery Image 8">
+                <img src="foodimagehome5.jpg" alt="Gallery Image 9">
+            </div>
+        </div>
+
+        <div class="about-box">
+            <h3>Connect with Us</h3>
+            <div class="social-media-box">
+                <a href="https://www.facebook.com" target="_blank"><img src="facebook.jpg" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="instagram.jpg" alt="Instagram"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="twitter.jpg" alt="Twitter"></a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        By continuing on this website, you are agreeing to our terms and conditions.
+    </footer>
+</body>
+
+</html>
